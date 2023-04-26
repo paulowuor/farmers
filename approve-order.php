@@ -15,7 +15,7 @@ $status = $_POST['status'];
 $email_address=get_farmer_email_address($orderId);
 
 //send email notification
-send_email_notification_to_farmer($email_address,$message="We have successfully approve your order");
+send_email_notification_to_farmer($email_address,$message="We have successfully approved your order");
 
 // Update the order status in the database
 $query = "UPDATE orders SET status = '$status' WHERE id = $orderId";
