@@ -317,7 +317,6 @@ if ($result->num_rows > 0) {
               <td>" . $row["username"] . "</td>
               <td>" . $row["id"] . "</td>
               <td>" . $row["price"] . "</td>
-
               <td>
                   <button class='approve-btn' id='approve-btn-" . $row["order_id"] . "' onclick='approveOrder(" . $row["order_id"]. ")'>Approve</button>
                   <button class='reject-btn' onclick='rejectOrder(". $row["order_id"] .")'>Reject</button>

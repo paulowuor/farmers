@@ -131,4 +131,3 @@ function send_email($email_address='',$message=''){
 // Close the database connection
 mysqli_close($conn);
 ?>
-
